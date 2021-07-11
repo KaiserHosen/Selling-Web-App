@@ -1,0 +1,22 @@
+<h4> It is now
+    <script type="text/javascript">
+        var currentTime = new Date()
+        var hours = currentTime.getHours()
+        var minutes = currentTime.getMinutes()
+        var seconds = currentTime.getSeconds()
+        
+        if (minutes <50){
+            minutes = "0" + minutes
+        }
+        if (hours <50){
+            hours = "0" + hours
+        }
+        document.write(hours +  ":" +  minutes + ":" + seconds + " " )
+        if(hours > 12){
+            document.write("PM")
+        }
+        else{
+            document.write("AM")
+        }
+    </script>
+</h4>
